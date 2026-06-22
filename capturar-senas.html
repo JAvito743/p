@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Capturar señas | Manos que Hablan</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="app">
+    <section class="record-card">
+      <h2>Grabar nuevas señas para entrenar</h2>
+      <p class="nota-suave">Esta pantalla captura fotos desde celular o computador y las organiza por carpetas dentro de un ZIP.</p>
+      <p id="avisoCamara" class="nota">Solicitando permiso de cámara...</p>
+
+      <label for="nombreSena">Nombre de la seña</label>
+      <input id="nombreSena" type="text" placeholder="Ejemplo: agua, comer, bano" autocomplete="off" />
+
+      <video id="video" autoplay playsinline muted></video>
+
+      <div class="record-buttons">
+        <button id="btnCapturar" type="button">Capturar muestra</button>
+        <button id="btnDescargarDataset" type="button">Descargar dataset</button>
+        <button id="btnLimpiarDataset" type="button">Limpiar muestras</button>
+      </div>
+
+      <p id="contadorMuestras">Muestras capturadas: 0</p>
+      <div id="previewMuestras" class="preview-muestras"></div>
+
+      <p><a href="./index.html">← Volver a la aplicación</a></p>
+    </section>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/jszip@3.10.1/dist/jszip.min.js"></script>
+  <script src="captura.js"></script>
+</body>
+</html>
