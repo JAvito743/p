@@ -100,7 +100,7 @@ async function cargarModelo() {
       runningMode: "VIDEO",
       numHands: 1
     });
-    estado.textContent = "Modelo básico cargado. Para más señas, entrena y copia modelos/modelo_senas.task.";
+    estado.textContent = "Modelo básico cargado";
   }
 }
 
